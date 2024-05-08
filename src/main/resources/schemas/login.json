@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product",
+  "description": "A product from the catalog",
+  "type": "object",
+  "properties": {
+    "email": {
+      "description": "Email del usuario",
+      "type": "string",
+      "minLength": 5,
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    },
+    "password": {
+      "description": "Contraseña del usuario",
+      "type": "string",
+      "minLength": 8,
+      "pattern": "^(?!.*\\s)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$"
+    }
+
+  },
+  "required": ["email", "password"]
+}

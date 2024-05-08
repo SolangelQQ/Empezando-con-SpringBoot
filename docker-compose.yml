@@ -1,0 +1,7 @@
+services:
+  hexagonalapp:
+    image: hexagonal:last
+    ports:
+      - "8000:8080"
+    volumes:
+      - "/data"
