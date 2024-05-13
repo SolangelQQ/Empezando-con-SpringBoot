@@ -18,15 +18,13 @@ public interface ILoginApi {
     @ApiResponses(
             value = {
                     @ApiResponse(
-                            responseCode = "200", description = "Inicio de sesión exitoso",
+                            responseCode = "200", description = "Inicio de sesión completada",
                             content = {@Content(mediaType = "application/json",
                                     schema = @Schema(implementation = LoginResponse.class))}),
                     @ApiResponse(
                             responseCode = "400", description = "Solicitud incorrecta"),
                     @ApiResponse(
-                            responseCode = "401", description = "No autorizado"),
-                    @ApiResponse(
-                            responseCode = "404", description = "Recurso no encontrado"),
+                            responseCode = "404", description = "Page not founded"),
                     @ApiResponse(
                             responseCode = "500", description = "Error interno del servidor",
                             content = {@Content(mediaType = "application/json",

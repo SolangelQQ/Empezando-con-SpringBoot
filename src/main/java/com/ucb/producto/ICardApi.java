@@ -21,11 +21,7 @@ public interface ICardApi {
                     @ApiResponse(
                             responseCode = "400", description = "Solicitud de pago incorrecta"),
                     @ApiResponse(
-                            responseCode = "401", description = "Pago no autorizado"),
-                    @ApiResponse(
-                            responseCode = "403", description = "Pago prohibido"),
-                    @ApiResponse(
-                            responseCode = "404", description = "Recurso de pago no encontrado"),
+                            responseCode = "404", description = "Page not founded"),
                     @ApiResponse(
                             responseCode = "500", description = "Error interno del servidor al procesar el pago",
                             content = {@Content(mediaType = "application/json",

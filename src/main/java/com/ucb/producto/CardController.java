@@ -31,7 +31,7 @@ public class CardController implements ICardApi {
         try {
             json = mapper.writeValueAsString(card);
             JsonSchemaFactory factory = JsonSchemaFactory.getInstance(VersionFlag.V7);
-            JsonSchema jsonSchema = factory.getSchema(LoginController.class.getClassLoader().getResourceAsStream("schemas/login.json"));
+            JsonSchema jsonSchema = factory.getSchema(LoginController.class.getClassLoader().getResourceAsStream("schemas/card.json"));
             JsonNode jsonNode = mapper.readTree(json);
             Set<ValidationMessage> errors = jsonSchema.validate(jsonNode);
 

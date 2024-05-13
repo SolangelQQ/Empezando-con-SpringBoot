@@ -11,7 +11,7 @@ springdoc:
   packagesToScan: com.ucb.producto
   pathsToMatch: /**
 sentry:
-  dsn: https://7614570b4a4200bc6f07b8c02c43122b@o4507141354946560.ingest.us.sentry.io/4507215933014016
+  dsn: https://16b3807fb48ef225be3730a396870c95@o4507141733744640.ingest.us.sentry.io/4507249122017280
   # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
   # We recommend adjusting this value in production.
   traces-sample-rate: 1.0
